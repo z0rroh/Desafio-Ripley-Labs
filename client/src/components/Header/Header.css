@@ -1,0 +1,43 @@
+
+.header-container {
+   background: #1a1a1a;
+   height: 70px;
+}
+
+.header-section {
+   width: 100%;
+}
+
+.header-nav {
+   width: 100%;
+   max-width: 1140px;
+   display: block;
+   margin: 0 auto;
+   background-color: #1a1a1a;
+   overflow: hidden;
+   height: 70px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.header-nav .logo-container, .bolsa-container {
+   width: 70px;
+   height: 100%;
+}
+.header-nav .menu-container {
+   width: 100%;
+}
+.header-nav a {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.header-nav a > svg {
+   height: 40px;
+   width: 40px;
+   fill: #fff;
+}
+

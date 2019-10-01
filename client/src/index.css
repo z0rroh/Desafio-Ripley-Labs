@@ -5,6 +5,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body, #root, #root>div {
+  height: 100vh;
+}
+
 body {
   margin: 0;
   font-family: Montserrat,Helvetica,Arial,sans-serif;
