@@ -1,12 +1,13 @@
 import React from 'react';
+import './Catalog.css'
 
 const CatalogComponent = () => {
    return (
-      <div className="catalog-grid">
+      <section className="catalog-grid">
          <div className="row">
-            
+            <p>hola</p>
          </div>
-      </div>
+      </section>
    );
 };
 

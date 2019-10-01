@@ -1,5 +1,7 @@
 
-.catalog-view-container {
+.catalog-view {
    width: 100%;
+   max-width: 1400px;
    height: 100vh;
+   padding: 0 15px 0 15px;
 }

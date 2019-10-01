@@ -1,6 +1,8 @@
 .catalog-grid {
-
+   height: 100%;
+   width: 100%;
 }
-.catalog-grid .row {
 
+.catalog-grid .row {
+   margin: 0 auto;
 }
