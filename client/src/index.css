@@ -19,6 +19,12 @@ body {
   transition: padding .3s linear;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --base1: #4e4e4e!important;
   --comp1: #dbdbdb!important;

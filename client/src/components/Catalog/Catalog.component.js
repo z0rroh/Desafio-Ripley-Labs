@@ -1,11 +1,21 @@
 import React from 'react';
 import './Catalog.css'
+import CatalogProduct from '../CatalogProduct/CatalogProduct'
 
 const CatalogComponent = () => {
    return (
       <section className="catalog-grid">
          <div className="row">
-            <p>hola</p>
+            <CatalogProduct/>
+            <CatalogProduct/>
+            <CatalogProduct/>
+            <CatalogProduct/>
+            <CatalogProduct/>
+            <CatalogProduct/>
+            <CatalogProduct/>
+            <CatalogProduct/>
+            <CatalogProduct/>
+            <CatalogProduct/>
          </div>
       </section>
    );
