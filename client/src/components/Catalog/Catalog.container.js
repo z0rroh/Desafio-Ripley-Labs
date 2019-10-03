@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import CatalogComponent from './Catalog.component'
-import { products as productsList } from '../../productList'
+import axios from 'axios'
+
+const api = process.env.REACT_APP_REST_API
 
 const CatalogContainer = () => {
    const [products, setProducts] = useState([])
 
    useEffect(() => {
-      setProducts(productsList)
+      const fetchProducts = async () => {
+         const res = await axios.get(`${api}/product`)
+         setProducts(res.data)
+      }
+      fetchProducts()
    },[])
 
    return (

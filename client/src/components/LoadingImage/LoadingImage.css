@@ -1,0 +1,18 @@
+.proportional-image-wrapper-boundary{
+   position: relative;
+   padding-bottom: 74.0741%;
+}
+
+.catalog-product__loading-image {
+   transition: opacity 200ms ease 0s;
+   opacity: 1;
+}
+
+.catalog-product__loading-image img {
+   position: absolute;
+   width: 30%;
+   top: 35%;
+   right: 60%;
+   -webkit-transform: translateY(-50%) translateX(50%);
+   transform: translateY(-50%) translateX(50%);
+}

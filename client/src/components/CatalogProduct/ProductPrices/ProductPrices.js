@@ -7,14 +7,16 @@ const ProductPrices = ({ prices }) => {
       <div className="catalog-product-details__prices">
          <div className="catalog-prices">
             <ul className="catalog-prices__list">
-               { prices.formattedListPrice &&
+               { prices.formattedListPrice && prices.listPrice > prices.offerPrice &&
                   <li 
                      className="catalog-prices__list-price catalog-prices__lowest" title="Precio Normal">
                      { prices.formattedListPrice }
                   </li>
                }
                { prices.formattedOfferPrice &&
-                  <li className="catalog-prices__offer-price" title="Precio Internet">
+                  <li 
+                     className={"catalog-prices__offer-price " + (prices.formattedCardPrice ? "" : "catalog-prices__highest") }
+                     title="Precio Internet">
                      { prices.formattedOfferPrice }
                   </li>
                }

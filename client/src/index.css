@@ -24,13 +24,3 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-:root {
-  --base1: #4e4e4e!important;
-  --comp1: #dbdbdb!important;
-  --yellow: #ecb900!important;
-  --red: #d42644!important;
-  --text: #fff!important;
-  --text2: rgba(255,255,255,.85);
-  --grey: #e8e8e8;
-}

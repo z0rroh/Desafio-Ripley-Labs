@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProducView.css'
+import './ProductView.css'
 
 const ProductView = () => {
    

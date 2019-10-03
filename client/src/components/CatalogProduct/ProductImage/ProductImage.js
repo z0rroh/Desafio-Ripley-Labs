@@ -2,6 +2,7 @@ import React from 'react';
 import './ProductImage.css'
 
 const ProductImage = ({ image }) => {
+
    return (
       <div className="proportional-image-wrapper catalog-product__image-preview">
          <div className="images-preview">
