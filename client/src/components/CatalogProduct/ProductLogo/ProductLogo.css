@@ -1,0 +1,15 @@
+.catalog-product-details__logo-container .brand-logo {
+   display: block;
+   margin: 6px auto;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: 0;
+   color: #000;
+   font-size: 12px;
+   font-weight: 600;
+}
+.catalog-product-details__logo-container .has-logo {
+   height: 18px;
+   max-width: 50%;
+   margin: 8px 0;
+}

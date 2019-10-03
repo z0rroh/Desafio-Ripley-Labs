@@ -1,0 +1,23 @@
+.catalog-product-details__name {
+   white-space: normal !important;
+   line-height: 16px;
+   font-size: 12px;
+   max-height: 30px;
+}
+
+.catalog-product-details__name {
+   width: 100%;
+   white-space: nowrap;
+   margin-bottom: 10px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   font-weight: 600;
+}
+
+@media only screen and (max-width: 991px){
+   .catalog-product-details__name {
+      line-height: 12px;
+      font-size: 10px;
+      max-height: 25px;
+   }
+}

@@ -1,0 +1,18 @@
+.catalog-product-details__discount-tag {
+   width: 60px;
+   height: 35px;
+   top: -5px;
+   border-radius: 3px;
+   background-color: #e75353;
+   text-align: center;
+   line-height: 35px;
+   font-size: 16px;
+   font-weight: 500;
+   color: #fff;
+}
+
+.catalog-product-details__discount-tag {
+   position: absolute;
+   z-index: 2;
+   right: 0;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './CatalogView.css'
-import CatalogContainer from '../components/Catalog/Catalog.container'
+import CatalogContainer from '../../components/Catalog/Catalog.container'
 
 const CatalogView = () => {
    return (

@@ -2,20 +2,19 @@ import React from 'react';
 import './Catalog.css'
 import CatalogProduct from '../CatalogProduct/CatalogProduct'
 
-const CatalogComponent = () => {
+const CatalogComponent = ({ products }) => {
    return (
       <section className="catalog-grid">
          <div className="row">
-            <CatalogProduct/>
-            <CatalogProduct/>
-            <CatalogProduct/>
-            <CatalogProduct/>
-            <CatalogProduct/>
-            <CatalogProduct/>
-            <CatalogProduct/>
-            <CatalogProduct/>
-            <CatalogProduct/>
-            <CatalogProduct/>
+           {
+              products.map((product, idx) => {
+                 return (
+                    <CatalogProduct
+                        product={product} 
+                        key={idx}/>
+                 )
+              })
+           }
          </div>
       </section>
    );
