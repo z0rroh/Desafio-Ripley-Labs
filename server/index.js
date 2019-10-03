@@ -1,11 +1,9 @@
 global.__projectPath = __dirname;
 const loadEnv = require('./util/loadEnv')()
-const http = require('http')
-const app = require('./src/app')
+const api = require('./src/api/api')
 
 const config = {
   port: process.env.SERVER_PORT,
-  https: process.env.HTTPS_PORT,
 }
 
 const normalizePort = (val) => {
@@ -16,8 +14,8 @@ const normalizePort = (val) => {
 }
 
 const port = normalizePort(config.port);
-app.set('port', port);
+api.set('port', port);
 
-app.listen(port, () => {
-   console.log('App Running in localhost:' + config.port)
+api.listen(port, () => {
+   console.log('Desafio Ripley API - API Running in port: ' + config.port)
 })
