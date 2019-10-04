@@ -1,4 +1,4 @@
-.no-match-container {
+.error-container {
    width: 100%;
    margin: 0 auto;
    height: 100%;
@@ -7,20 +7,20 @@
    align-items: center;
 }
 
-.no-match-container .no-match-content {
+.error-container .error-content {
    width: 50%;
    height: 50%;
    margin: 0 0 50px 0;
 }  
 
-.no-match-content .no-match-message {
+.error-content .error-message {
    text-align: center;
    align-items: center;
    justify-content: center;
    display: flex;
 }
 
-.no-match-message h3 {
+.error-message h3 {
    color: #898989;
    font-size: 24px;
    margin: 0;

@@ -1,20 +1,20 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom'
-import './NoMatch.css'
+import './ServerError.css'
 
-const NoMatch = () => {
+const ServerError = () => {
    const history = useHistory()
    return (
-      <div className="no-match-container">
-         <div className="no-match-content row">
-            <div className="no-match-message col-xs-12">
-               <h3>La pagina que buscas no se encuentra disponible</h3>
+      <div className="error-container">
+         <div className="error-content row">
+            <div className="error-message col-xs-12">
+               <h3>Lo sentimos, ocurrio un error en nuestros servicios</h3>
             </div>
             <div className="button-wrapper col-xs-12">
                <button 
                   onClick={() => history.push("/")}
                   className="back-button">
-                  Volver al Inicio
+                  Volver a intentarlo
                </button>
             </div>
          </div>
@@ -22,4 +22,4 @@ const NoMatch = () => {
    );
 };
 
-export default NoMatch;
+export default ServerError;

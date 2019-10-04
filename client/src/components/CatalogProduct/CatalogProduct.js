@@ -10,7 +10,12 @@ import ProductLogo from './ProductLogo/ProductLogo';
 const CatalogProduct = ({ product }) => {
    return (
       <div className="catalog-product-container col-xs-6 col-sm-4 col-lg-custom">
-         <Link className="catalog-product-item catalog-product-item--event" to={`${product.url}`}>
+         <Link 
+            className="catalog-product-item catalog-product-item--event" 
+            to={{
+               pathname: `/product${product.url}`,
+               product: product
+            }}>
             <ProductImage image={product.fullImage}/>
             <div className="catalog-product-details">
                <ProductLogo brand={product.attributes[0]}/>

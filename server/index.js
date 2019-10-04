@@ -17,5 +17,5 @@ const port = normalizePort(config.port);
 api.set('port', port);
 
 api.listen(port, () => {
-   console.log('Desafio Ripley API - API Running in port: ' + config.port)
+   console.log('Desafio Ripley API - API Running on port: ' + config.port)
 })

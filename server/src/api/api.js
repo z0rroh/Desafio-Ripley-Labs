@@ -1,16 +1,15 @@
 const express = require('express')
-const redis = require('redis')
+//const redis = require('redis')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
 const api = express()
-const client = redis.createClient()
+//const client = redis.createClient()
 const addRouter = require('./routes/index')
 const errorRate = require('./middleware/errorRate')
-
 //redis errors
-client.on('error', (err) => {
-  console.log("Redis error: " + err)
-});
+// client.on('error', (err) => {
+//   console.log("Redis error: " + err)
+// });
 
 // Middlewares
 api.use(logger('dev')) //debugger
@@ -23,7 +22,6 @@ api.use((req, res, next) => {
   next();
 });
 api.use(errorRate) //aplica tasa de error de 10%
-
 // Routes
 api.get('/api', (req, res ) => {
   res.send("Desafio Ripley Labs")
