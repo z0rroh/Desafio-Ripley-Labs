@@ -6,13 +6,13 @@ import ProductView from './views/ProductView/ProductView'
 import ServerError from './components/ServerError/ServerError'
 import NoMatch from './components/NoMatch/NoMatch'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header/>
       <Router>
         <Switch>
-          <Route exact path="/" component={CatalogView} />
+          <Route exact path="/" component={ProductView} />
           <Route path="/product/:idDevice" component={ProductView}/>
           <Route exact path="/server-error" component={ServerError}/>
           <Route component={NoMatch}/>>

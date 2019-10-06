@@ -1,0 +1,78 @@
+/* product header */
+
+@media (max-width: 767px){
+   .hidden-xs {
+      display: none !important;
+   }
+}
+
+.visible-xs {
+   display: none !important;
+}
+
+@media (max-width: 767px){
+   .visible-xs {
+      display: block !important;
+      margin-bottom: 10px;
+   }
+}
+
+.product-header .row {
+   margin: 0;
+}
+.product-header .row div {
+   padding: 0;
+}
+.product-header .brand-logo{
+   max-height: 18px;
+}
+.brand-logo span {
+   color: #999;
+   font-weight: bold;
+}
+
+.product-header .product-name h1{
+   margin: 0;
+   color: #1a1a1a;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.product-header .product-sku small {
+   display: block;
+   color: #999;
+   letter-spacing: 2px;
+   font-weight: 800;
+   margin-bottom: 6px;
+   font-size: 80%;
+}
+
+.product-header .product-rating-small {
+   font-size: 12px;
+   margin-bottom: 7px;
+   cursor: pointer;
+}
+
+.product-header .product-short-description {
+   margin-bottom: 10px;
+   font-weight: 600;
+}
+
+.product-rating .stars-ranking-sprite--small.stars-ranking-0 {
+   background-position: 0 0;
+}
+
+.product-rating .stars-ranking {
+   display: inline-block;
+   margin-right: 10px;
+}
+
+.product-rating .stars-ranking-sprite--small {
+   height: 16px;
+   width: 83px;
+   background-image: url('../../../assets/stars-sprite-small.png')!important;
+}
+
+.product-rating .product-rating-text {
+   font-weight: 600;
+}
