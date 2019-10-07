@@ -12,7 +12,7 @@ const App = () => {
       <Header/>
       <Router>
         <Switch>
-          <Route exact path="/" component={ProductView} />
+          <Route exact path="/" component={CatalogView} />
           <Route path="/product/:idDevice" component={ProductView}/>
           <Route exact path="/server-error" component={ServerError}/>
           <Route component={NoMatch}/>>

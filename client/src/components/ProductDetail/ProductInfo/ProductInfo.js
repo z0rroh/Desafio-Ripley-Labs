@@ -18,7 +18,7 @@ const ProductInfo = ({ prices }) => {
                   <span className="product-price">{ prices.formattedOfferPrice }</span>
                </li>
             }
-            { prices.formattedOfferPrice &&
+            { prices.formattedCardPrice &&
                <li className="product-ripley-price">
                   <span className="product-price-type">Tarjeta Ripley</span>
                   <span className="product-price">
@@ -27,15 +27,15 @@ const ProductInfo = ({ prices }) => {
                   </span>
                </li>
             }
-            { prices.discountPercentage && prices.discountPercentage > 0 &&
-               <li className="product-price-discount">
+            { prices.discountPercentage && prices.discountPercentage > 0 ?
+            (<li className="product-price-discount">
                   <span className="product-price-type">Descuento</span>
                   <span className="product-discount-tag">
                      <span className="discount-percentage">
                         -{ prices.discountPercentage }%
                      </span>
                   </span>
-               </li>
+               </li>) : null
             }
             { prices.ripleyPuntos && prices.ripleyPuntos > 0 &&
                <li className="product-ripley-puntos">

@@ -19,8 +19,7 @@ const ProductDetailComponent = ({ product }) => {
                <div className="content-wrapper col-xs-12 col-sm-7">
                   <ProductImages 
                      name={product.name}
-                     images={product.images} 
-                     fullImage={product.fullImage}/>
+                     images={product.images}/>
                </div>
                <div className="content-wrapper col-xs-12 col-sm-5">
                   <ProductHeader

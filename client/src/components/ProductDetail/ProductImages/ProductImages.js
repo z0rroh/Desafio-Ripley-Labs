@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ProductImages.css'
 
-const ProductImages = ({ images, fullImage, name }) => {
+const ProductImages = ({ images, name }) => {
+   const [selectedImage, setSelectedImage] = useState(images[0])
+
    return (
       <section className="product-images">
          <ul className="product-image-previews">
@@ -9,7 +11,10 @@ const ProductImages = ({ images, fullImage, name }) => {
             images && (
                images.map((image, idx) => {
                   return(
-                     <li className="thumbnail-item is-active" key={`image-${idx}`}>
+                     <li
+                        onMouseEnter={()=> setSelectedImage(image)}
+                        className={"thumbnail-item " + (selectedImage === image && "is-active") }
+                        key={`image-${idx}`}>
                         <img src={image} alt={`${name}-${idx}`}/>
                      </li>
                   )
@@ -19,7 +24,7 @@ const ProductImages = ({ images, fullImage, name }) => {
          </ul>
          <div className="product-carousel-container gallery-container">
             <div className="item">  
-               <img src={fullImage} alt={name}/>
+               <img src={selectedImage} alt={name}/>
             </div>
          </div>
       </section>
