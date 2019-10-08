@@ -1,5 +1,7 @@
 const redis = require('redis')
-const client = redis.createClient()
+const redis_host = process.env.REDIS_HOST
+const redis_port = process.env.REDIS_PORT;
+const client = redis.createClient(redis_port, redis_host)
 
 const getCache = (req, res, next) => {
    const redisKey = 'products'
