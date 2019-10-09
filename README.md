@@ -57,5 +57,5 @@ Los pasos realizados para desplegar el servicio Express en estos servicios fuero
 	- Instalar Nginx y Cerbot para la generación de certificados SSL.
 		* Generar los certificados con Cerbot y el dominio creado.
 		* Configurar el proxy de Nginx con el dominio y los certificados obtenidos, a modo de redireccionar las peticiones HTTP a HTTPS.
-+ Con estos procedimientos, la API queda desplegada a la web de manera segura en el sitio: [API-DESAFIO-RIPLEY](https://desafioripley.tk/api/product).
++ Con estos procedimientos, la API queda desplegada a la web de manera segura en el sitio: [API-DesafioRipley](https://desafioripley.tk/api/product).
 		
