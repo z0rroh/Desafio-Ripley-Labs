@@ -24,4 +24,4 @@ Para correr el proyecto en un entorno de producción debes ejecutar el el siguie
 
 ### `npm run build`
 
-Luego de esto, se genera una carpeta "build" en la cual se encuentra el bundle de JavaScript y los archivos estáticos necesarios para desplegarla en la plataforma de cualquier proveedor cloud.
+Luego de esto, se genera una carpeta "build" en la cual se encuentra el bundle de JavaScript y los archivos estáticos necesarios para desplegar la plataforma de cualquier proveedor cloud.
