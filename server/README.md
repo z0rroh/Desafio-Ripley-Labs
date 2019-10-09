@@ -14,6 +14,6 @@ Esto configura el proyecto en modo desarrollador con sus respectivas variables d
 
 ### Deployment
 
-Para correr el proyecto en un entorno de producción debes ejecutar el directamente archivo index.js:
+Para correr el proyecto en un entorno de producción debes ejecutar directamente archivo index.js:
 
 ### `node index.js` 
